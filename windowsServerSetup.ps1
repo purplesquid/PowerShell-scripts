@@ -28,7 +28,6 @@ function qemuagent{
 	$username=""
 	$password = ConvertTo-SecureString "" -AsPlainText -Force
 	$cred = New-Object System.Management.Automation.PSCredential ($username, $password)
-	
 	$servers = ""
 	
 	foreach($server in $servers){
