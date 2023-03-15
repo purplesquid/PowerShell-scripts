@@ -35,6 +35,7 @@ foreach($file in $files){
 	$document.Close(-1)
 }
 
+#Closes Word com object and run garbage collector
 $word.Quit()
 $word = $null
 [GC]::Collect()
