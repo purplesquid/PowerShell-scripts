@@ -152,7 +152,7 @@ function qemuagent{
 						Restart-Computer -Force
 					}
 					else{
-						"Server will need to be rebooted before $($env:computername) is joined to $($fullDomainName)"
+						Write-Output "Server will need to be rebooted before $($env:computername) is joined to $($fullDomainName)"
 					}
 				}
 			}
