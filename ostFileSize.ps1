@@ -32,6 +32,5 @@ Param ($device)
 		catch{
 			Write-Output "No active users logged in"
 		}
-		
 	}
 }
